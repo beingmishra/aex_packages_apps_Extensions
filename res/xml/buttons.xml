@@ -58,7 +58,7 @@
         android:defaultValue="false"
 	    android:disableDependentsState="true" />
 
-        <org.aospextended.extensions.preference.SystemSettingListPreference
+      <org.aospextended.extensions.preference.SystemSettingListPreference
             android:key="volume_key_cursor_control"
             android:summary="%s"
             android:title="@string/volume_key_cursor_control_title"
@@ -66,6 +66,12 @@
             android:entries="@array/volume_key_cursor_control_entries"
             android:entryValues="@array/volume_key_cursor_control_values"
             android:defaultValue="0" />
+
+        <org.aospextended.extensions.preference.SystemSettingSwitchPreference
+        android:key="music_volume_panel_dialog"
+        android:title="@string/volume_panel_musiccard_title"
+        android:summary="@string/volume_panel_musiccard_summary"
+        android:defaultValue="true" />
     </PreferenceCategory>
 
     <PreferenceCategory android:key="hardware_keys"
